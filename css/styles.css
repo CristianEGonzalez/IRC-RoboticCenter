@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: aliceblue;
+}
+
+.top{
+    display: flex;
+    padding: 5px;
+    justify-content: right;
+    height: 50px;
+    align-items: center;
+}
+
+.credenciales{
+    margin: 5px 10px;
+    transition: transform 0.3s;
+}
+    .credenciales:hover {
+        transform: scale(1.2);
+    }
+
+input[type=submit]{
+    height: 80%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0px 10px;
+    width: 100%;
+    height: max-content;
+    background: linear-gradient(to bottom, cornflowerblue, rgba(0, 100, 0, 0.01));
+    margin-bottom: 10px;
+}
+header h1{
+    font-family: "Bungee Hairline", cursive;
+    font-weight: bolder;
+    font-size: calc(20px + 3vw);
+    text-shadow: 1px 1px 5px white;
+}
+
+header img{
+    width: 300px;
+    min-width: 250px;
+    object-fit: cover;
+    padding: 10px 5px;
+}
+
+.dropdown-menu{
+    width: 10vw;
+    min-width: 300px;
+    margin-left: 20px;
+    padding: 0px 0px;
+}
+#dLabel{
+    width: 10vw;
+    min-width: 300px;
+    margin-left: 20px;
+    margin-right: auto;
+    border-radius: 0px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.dropdown-menu li{
+    width: 100%;
+    min-width: 300px;
+    border-radius: 0px;
+}
+
+.description{
+    font-family: "Martian Mono", sans-serif;
+    font-weight: bold;
+    width: 90vw;
+    padding: 5px;
+    margin: 20px auto;
+    font-size: calc(10px + 0.3vw);
+    box-shadow: 2px 2px 5px black;
+}
+
+h2{
+    font-size: calc(15px + 1vw);
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.form-inline{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+.form-group{
+    margin-right: 10px;
+}
+
+.sub-section{
+    text-align: center;
+}
+
+.galery{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    width: 90vw;
+    margin: auto;
+}
+.galery img{
+    max-width: 90%;
+    object-fit: cover;
+}
+.btn-info{
+    border-radius: 0px;
+}
+
+.video-yt{
+    border-top: 10px solid cornflowerblue;
+    border-bottom: 10px solid cornflowerblue;
+    border-left: 10px solid blue;
+    border-right: 10px solid blue;
+    margin: 20px auto auto 5px;
+    max-width: 95%;
+}
+
+.semana{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.panel{
+    margin: 10px auto;
+    width: 350px;
+    max-width: 100%;
+    box-shadow: 1px 1px 5px black;
+}
+
+.panel-default>.panel-heading{
+    background: linear-gradient(to left, cornflowerblue, rgba(0, 100, 0, 0.01));
+}
+
+#info-professor{
+    margin-top: 50px;
+}
+
+#classes{
+    font-size: calc(25px + 1vw);
+    text-align: center;
+    background: linear-gradient(to bottom, cornflowerblue, rgba(0, 100, 0, 0.01));
+    box-shadow: 1px 1px 5px black;
+}
+
+
+/* media queries ------------------------------------------------------------ */
+
+@media only screen and (max-width:767px){
+    .form-inline{
+        margin: auto;
+    }
+
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+        text-align: center;
+        font-size: 80vw;
+    }
+    header img{
+        width: 250px;
+        min-width: 250px;
+        object-fit: cover;
+        padding: 10px 5px;
+    }
+    #dLabel{
+        width: 250px;
+        max-width: 100%;
+        min-width: 200px;
+        margin: 0px;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    .dropdown-menu{
+        margin: auto;
+        width: 250px;
+        min-width: 250px;
+    }
+    .dropdown-menu li{
+        width: 250px;
+        min-width: 250px;
+    }
+    .description{
+        text-align: center;
+    }
+
+    .table-responsive {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid #ddd;
+    }
+
+}
+
+/* valide.js ------------------------------------------------------------ */
+
+.error {
+    color: red;
+    font-style: italic;
+  }
+.success{
+    color: green;
+    font-style: italic;
+}
+
+.popuplogin{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, cornflowerblue, rgba(0, 100, 0, 0.01));
+    background-repeat: no-repeat;
+    height: 95%;
+    vertical-align: middle;
+    list-style: square;
+}
+.popuplogin p{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2%;
+    margin: 5%;
+    border-radius: 10px;
+}
+
+.popuplogin ul{
+    list-style: inside;
+    width: 90vw;
+}
+
+/*--FOOTER --------------------------------------------------------------*/
+
+footer{
+    text-align: center;
+    background: linear-gradient(to right, cornflowerblue, aliceblue, cornflowerblue);
+    padding: 2px;
+    margin-top: 20px;
+    font-style: italic;
+    font-size: calc(10px + 0.1vw);
+}
+
+
+
+

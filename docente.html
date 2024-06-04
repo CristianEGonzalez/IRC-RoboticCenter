@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>IRC Academy - My Profile</title>
+</head>
+
+<script src="./js/login.js"></script>
+
+    <body>
+        <div class="top">
+            <h4 id="bienvenida" class="welcome-user"></h4>
+        </div>
+        <header class="title" id="home">
+            <h1>International<br>Robotic<br>Center</h1>
+            <img src="./media/logo.png" alt="IRC Logo">
+        </header>
+
+        <nav class="menu">
+            <div class="dropdown">
+                <button id="dLabel" class="btn btn-info" type="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">SECTIONS <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                    <a href="index.html">
+                        <li class="btn btn-info">Home</li>
+                    </a>
+                    <a href="#classes" id="index-button">
+                        <li class="btn btn-info">Classes</li>
+                    </a>
+                    <a href="index.html#why">
+                        <li class="btn btn-info">Why choose IRC?</li>
+                    </a>
+                    <a href="index.html#programs">
+                        <li class="btn btn-info">Programs</li>
+                    </a>
+                    <a href="index.html#news">
+                        <li class="btn btn-info">Newsletter</li>
+                    </a>
+                    <a href="index.html#facilities">
+                        <li class="btn btn-info">Facilities</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container" id="info-professor">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="./media/fotoPerfilRodrigo.png" id="img-profesor" alt="Teacher Profile" style="width: 200px;">
+                </div>
+                <div class="col-md-9">
+                    <h2 id="legajo"></h2>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td><strong>Degree:</strong></td>
+                                <td>Robotics and I.A. Engineer</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Email:</strong></td>
+                                <td>rodrigocianciulli@mail.com</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Phone:</strong></td>
+                                <td>123-456-7890</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Address:</strong></td>
+                                <td>123 Main Street, City, State</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="classes">Classes</h2>
+        <section class="semana container">
+            <div class="panel panel-default mt-5">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Monday</h2>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Hour</th>
+                                <th>Class</th>
+                                <th>Room</th>
+                                <th>#Program</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>9:00 AM - 13:00 AM</td>
+                                <td>I.A. Developer</td>
+                                <td>101</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>15:30 AM - 17:30 PM</td>
+                                <td>Arming and Assembly</td>
+                                <td>204</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>20:00 AM - 22:00 PM</td>
+                                <td>Project Manager</td>
+                                <td>202</td>
+                                <td>4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="panel panel-default mt-5">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Tuesday</h2>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Hour</th>
+                                <th>Class</th>
+                                <th>Room</th>
+                                <th>#Program</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>8:00 AM - 11:00 AM</td>
+                                <td>Robotronic Playroom</td>
+                                <td>101</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>11:00 AM - 12:30 PM</td>
+                                <td>History of Robotics</td>
+                                <td>116</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>18:00 AM - 21:00 PM</td>
+                                <td>Wireless Technology</td>
+                                <td>202</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="panel panel-default mt-5">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Wednesday</h2>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Hour</th>
+                                <th>Class</th>
+                                <th>Room</th>
+                                <th>#Program</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>9:00 AM - 13:00 AM</td>
+                                <td>I.A. Developer</td>
+                                <td>101</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>15:30 AM - 17:30 PM</td>
+                                <td>Arming and Assembly</td>
+                                <td>204</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>20:00 AM - 22:00 PM</td>
+                                <td>Project Manager</td>
+                                <td>202</td>
+                                <td>4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="panel panel-default mt-5">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Thursday</h2>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Hour</th>
+                                <th>Class</th>
+                                <th>Room</th>
+                                <th>#Program</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>8:00 AM - 11:00 AM</td>
+                                <td>Robotronic Playroom</td>
+                                <td>101</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>11:00 AM - 12:30 PM</td>
+                                <td>History of Robotics</td>
+                                <td>116</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>18:00 AM - 21:00 PM</td>
+                                <td>Wireless Technology</td>
+                                <td>202</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="panel panel-default mt-5">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Friday</h2>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Hour</th>
+                                <th>Class</th>
+                                <th>Room</th>
+                                <th>#Program</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>9:00 AM - 13:00 AM</td>
+                                <td>I.A. Developer</td>
+                                <td>101</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>15:30 AM - 17:30 PM</td>
+                                <td>Arming and Assembly</td>
+                                <td>204</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>20:00 AM - 22:00 PM</td>
+                                <td>Project Manager</td>
+                                <td>202</td>
+                                <td>4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <a href="https://www.instagram.com/cris_lovefit/" target="_blank">© Sitio creado por Cristian Emmanuel Gonzalez
+                | 2023</a>
+        </footer>
+    </body>
+
+    <script src="./js/valide.js"></script>
+
+</html>

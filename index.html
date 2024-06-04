@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="shortcut icon" href="./media/logo-ico.png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>IRC Academy</title>
+</head>
+
+<body>
+    <div class="top" id="message">
+
+
+
+        <button type="button" class="btn btn-info credenciales" data-toggle="popover"
+        data-placement="bottom" title="Login Info:"
+        data-content='Student: agustina / Professor: rodrigo. Passwords: 123'>
+        <i>i</i>
+        </button>
+
+        <form id="formlogin" class="form-inline">
+            <div class="form-group">
+                <input type="text" placeholder="Enter User" id="usuario" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Enter Password" id="password" class="form-control">
+            </div>
+            <input type="submit" id="login" value="Login" class="btn btn-primary">
+        </form>
+    </div>
+    <header class="title" id="home">
+        <h1>International<br>Robotic<br>Center</h1>
+        <img src="./media/logo.png" alt="IRC Logo">
+    </header>
+    <nav class="menu">
+        <div class="dropdown">
+            <button id="dLabel" class="btn btn-info" type="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">SECTIONS <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                <a href="#why">
+                    <li class="btn btn-info">Why choose IRC?</li>
+                </a>
+                <a href="#programs">
+                    <li class="btn btn-info">Programs</li>
+                </a>
+                <a href="#news">
+                    <li class="btn btn-info">Newsletter</li>
+                </a>
+                <a href="#facilities">
+                    <li class="btn btn-info">Facilities</li>
+                </a>
+                <a href="" onclick="popup('popuplogin.html', '')">
+                    <li class="btn btn-info">My Profile</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="description">
+
+        <p>Welcome to International Robotic Center Academy, the premier educational center for robotics for children and
+            teenagers aged 5 to 17. Our website is designed to provide you with a comprehensive overview of our
+            exceptional programs and the transformative learning experiences we offer.
+            <br>
+            At International Robotic Center Academy, we believe in empowering young minds through hands-on exploration
+            and innovation in the field of robotics. Our state-of-the-art facility is equipped with cutting-edge
+            technology and an inspiring learning environment where students can unleash their creativity and develop
+            critical skills for the future.
+        </p>
+
+    </div>
+
+    <div class="container">
+        <h2 id="why">Why Choose IRC Academy?</h2>
+        <table class="table">
+            <tr>
+                <td>Expert Instructors</td>
+                <td>
+                    <ul>
+                        <li>Our instructors are experienced professionals passionate about robotics education and
+                            dedicated to nurturing each student's potential.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Hands-on Learning</td>
+                <td>
+                    <ul>
+                        <li>We believe in learning by doing. Our programs emphasize practical, hands-on activities to
+                            reinforce theoretical concepts and foster a deeper understanding of robotics.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Small Class Sizes</td>
+                <td>
+                    <ul>
+                        <li>We maintain small class sizes to ensure personalized attention and ample interaction between
+                            instructors and students.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>State-of-the-Art Facilities</td>
+                <td>
+                    <ul>
+                        <li>Our modern facility is equipped with the latest robotics kits, tools, and software to
+                            provide an immersive learning experience.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Competitions and Showcases</td>
+                <td>
+                    <ul>
+                        <li>Students have the opportunity to participate in internal competitions and showcases,
+                            allowing them to demonstrate their skills and gain confidence in their abilities.</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <main>
+        <article>
+            <div class="container">
+                <h2 id="programs">Programs</h1>
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>#</th>
+                                <th>Program</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Robotics Foundations (Ages 5-7)</td>
+                                <td>Our Robotics Foundations program introduces young learners to the exciting world of
+                                    robotics through interactive activities and age-appropriate challenges. Students
+                                    acquire basic engineering concepts, problem-solving skills, and teamwork abilities
+                                    while building and programming simple robots.</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Junior Robotics (Ages 8-11)</td>
+                                <td>In our Junior Robotics program, students dive deeper into robotics and engineering
+                                    concepts. They work with more advanced robotics kits, learn programming
+                                    fundamentals, and engage in hands-on projects that encourage logical thinking,
+                                    creativity, and collaboration.</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Advanced Robotics (Ages 12-14)</td>
+                                <td>The Advanced Robotics program is designed for students who want to expand their
+                                    knowledge and skills in robotics. Participants tackle complex challenges, explore
+                                    advanced programming languages, and develop their own robotic creations using
+                                    sensors, motors, and microcontrollers.</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Robotics Engineering (Ages 15-17)</td>
+                                <td>Our Robotics Engineering program is tailored for aspiring engineers and
+                                    technologists. Students delve into robotics at an advanced level, covering topics
+                                    such as artificial intelligence, machine learning, and autonomous systems. They work
+                                    on sophisticated projects that simulate real-world applications, pushing the
+                                    boundaries of their capabilities.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+        </article>
+
+    </main>
+
+    <hr>
+
+    <section class="container">
+        <h3 id="news">SUBSCRIBE TO OUR NEWSLETTER</h1>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subscription">Which option would you like to subscribe to?</label>
+                    <select class="form-control" id="subscription">
+                        <option value="newsletter">Newsletter only</option>
+                        <option value="promotions">Promotions only</option>
+                        <option value="newsletter-promotions">Newsletter and Promotions</option>
+                        <option value="none">None</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="information">What type of information would you like to receive?</label>
+                    <select class="form-control" id="information">
+                        <option value="news-updates">News and updates</option>
+                        <option value="promotions-discounts">Promotions and discounts</option>
+                        <option value="industry-insights">Industry insights</option>
+                        <option value="other">Other (please specify)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="specify">Other:</label>
+                    <input type="text" class="form-control" id="specify" placeholder="Specify if your choice is other">
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="checkbox1" required>
+                    <label class="form-check-label" for="checkbox1">
+                        Subscribe to the newsletter
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="checkbox2">
+                    <label class="form-check-label" for="checkbox2">
+                        Receive promotional offers
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="checkbox3">
+                    <label class="form-check-label" for="checkbox3">
+                        Get regular updates
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+    </section>
+
+    <hr>
+    <section>
+        <div class="sub-section">
+            <h2 id="facilities">FACILITIES</h2>
+            <p><i>Click on the image to start the slide or on the buttons to change them manually</i></p>
+        </div>
+        <div id="galery" class="galery">
+            <input type="button" class="btn btn-info" value="←" onclick="galeria(-1)">
+            <img src="./media/foto1.png" class="diapositiva" title="Click en la imagen para comenzar diapositiva"
+                width="600" height="600" id="imagen" value="diapositiva" onclick="auto()">
+            <input type="button" class="btn btn-info" value="→" align="top" onclick="galeria(1)">
+            <br><br>
+        </div>
+    </section>
+
+    <hr>
+    <aside class="sub-section">
+        <h2>JOB OPPORTUNITIES</h2>
+        <p style="font-size: calc(12px + 0.4vw);"><strong>With our Robotics Engineering program for young people between 15 and 17 years old, we offer job
+            opportunities in a catalog of companies that collaborate with us.</strong></p>
+        
+        <iframe class="video-yt" width="560" height="315"
+            src="https://www.youtube.com/embed/4DKrcpa8Z_E?si=G072zxhBVKP6AZPD" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+        <p style="width: 30%; min-width: 250px; margin: auto;"><i> One of the main ones is the new Ocado warehouse, which has thousands of robots rotating
+            around a grid system to package food. The thousands of robots can process 65,000 orders each week. They
+            communicate via a 4G network to avoid colliding with each other.</i></p>
+    </aside>
+
+    <footer>
+        <a href="https://www.instagram.com/cris_lovefit/" target="_blank">© Sitio creado por Cristian Emmanuel Gonzalez
+            | 2023</a>
+    </footer>
+</body>
+
+<script>
+    $(function () {
+      $('[data-toggle="popover"]').popover();
+    });
+  </script>
+<script src="./js/form.js"></script>
+<script src="./js/galery.js"></script>
+<script src="./js/popup-login.js"></script>
+
+</html>

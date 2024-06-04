@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>IRC Academy - My Profile</title>
+</head>
+
+<script src="./js/login.js"></script>
+
+    <body>
+        <div class="top">
+            <h4 id="bienvenida" class="welcome-user"></h4>
+        </div>
+        <header class="title" id="home">
+            <h1>International<br>Robotic<br>Center</h1>
+            <img src="./media/logo.png" alt="IRC Logo">
+        </header>
+
+        <nav class="menu">
+            <div class="dropdown">
+                <button id="dLabel" class="btn btn-info" type="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">SECTIONS <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                    <a href="index.html">
+                        <li class="btn btn-info">Home</li>
+                    </a>
+                    <a href="#myclass">
+                        <li class="btn btn-info">My Class</li>
+                    </a>
+                    <a href="#registrations">
+                        <li class="btn btn-info">Registrations</li>
+                    </a>
+                    <a href="index.html#why">
+                        <li class="btn btn-info">Why choose IRC?</li>
+                    </a>
+                    <a href="index.html#programs">
+                        <li class="btn btn-info">Programs</li>
+                    </a>
+                    <a href="index.html#news">
+                        <li class="btn btn-info">Newsletter</li>
+                    </a>
+                    <a href="index.html#facilities">
+                        <li class="btn btn-info">Facilities</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="container" id="myclass">
+            <h2>Weekly Class Schedule</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="./media/fotoPerfilAgustina.png" alt="Profile Picture" style="width: 150px;">
+                </div>
+                <div class="col-md-9">
+                    <h2>Student Information</h2>
+                    <p>Name: <span id="legajo"></span></p>
+                    <p>Age: 13 years</p>
+                </div>
+            </div>
+            <h2>Class Schedule for Advance Robotics</h2>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Professor</th>
+                            <th>Class</th>
+                            <th>Room</th>
+                            <th>Program</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>15:30 - 17:30</td>
+                            <td>Rodrigo Cianciulli</td>
+                            <td>Arming and Assembly</td>
+                            <td>204</td>
+                            <td>#3</td>
+                            <td><button class="btn btn-danger cancel-btn">Cancel</button></td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>09:00 - 13:00</td>
+                            <td>Rodrigo Cianciulli</td>
+                            <td>I.A. Developer</td>
+                            <td>101</td>
+                            <td>#3</td>
+                            <td><button class="btn btn-danger cancel-btn">Cancel</button></td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>15:30 - 17:30</td>
+                            <td>Rodrigo Cianciulli</td>
+                            <td>Arming and Assembly</td>
+                            <td>204</td>
+                            <td>#3</td>
+                            <td><button class="btn btn-danger cancel-btn">Cancel</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Script que reemplaza el contenido de la celda con el boton CANCEL, y lo restaura con otro boton-->
+            <script src="./js/class-cancel.js"></script>
+            <!--................................................................................................-->
+        </section>
+        <section class="container" id="registrations">
+            <h2>Conference/Seminar Registration</h2>
+            <form id="registrationForm">
+              <div class="form-group">
+                <label for="charla">Conference:</label>
+                <select class="form-control" id="charla" required>
+                  <option value="">Select a conference</option>
+                  <option value="Conference 1">RoboTech: Exploring the Future of Robotics</option>
+                  <option value="Conference 2">TechBot Conference: Unlocking the Secrets of Robotics</option>
+                  <option value="Conference 3">Robotics Revolution: Empowering Teens with Technology</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="fecha">Date:</label>
+                <input type="date" class="form-control" id="fecha" required>
+              </div>
+              <div class="form-group">
+                <label for="hora">Time:</label>
+                <input type="time" class="form-control" id="hora" min="08:00" max="20:00" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="form-group">
+                <label for="observaciones">Observations:</label>
+                <textarea class="form-control" id="observaciones"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Reserve Spot</button>
+            </form>
+            <div id="message"></div>
+        </section>
+
+        <footer>
+            <a href="https://www.instagram.com/cris_lovefit/" target="_blank">© Sitio creado por Cristian Emmanuel Gonzalez
+                | 2023</a>
+        </footer>
+    </body>
+
+    <!-- Script que limita la fecha de selección entre la fecha actual y el último día del año en curso -->
+    <script>
+        var fechaInput = document.getElementById('fecha');
+        var fechaActual = new Date().toISOString().split('T')[0];
+        var fechaMaxima = (new Date().getFullYear()) + '-12-31';
+        fechaInput.setAttribute('min', fechaActual);
+        fechaInput.setAttribute('max', fechaMaxima);
+    </script>
+    <!--................................................................................................-->
+
+    <script src="./js/valide.js"></script>
+
+</html>
